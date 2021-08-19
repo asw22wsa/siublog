@@ -80,27 +80,27 @@ var routes = [{
 }, {
   path: '/study',
   component: function component() {
-    return __webpack_require__.e(/*! import() */ "resources_js_components_view_study_index_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./components/view/study/index.vue */ "./resources/js/components/view/study/index.vue"));
+    return __webpack_require__.e(/*! import() */ "resources_js_components_study_index_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./components/study/index.vue */ "./resources/js/components/study/index.vue"));
   },
   children: [{
     path: '/',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ "resources_js_components_view_study_basic_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./components/view/study/basic.vue */ "./resources/js/components/view/study/basic.vue"));
+      return __webpack_require__.e(/*! import() */ "resources_js_components_study_basic_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./components/study/basic.vue */ "./resources/js/components/study/basic.vue"));
     }
   }, {
     path: 'php',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ "resources_js_components_view_study_php_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./components/view/study/php.vue */ "./resources/js/components/view/study/php.vue"));
+      return __webpack_require__.e(/*! import() */ "resources_js_components_study_php_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./components/study/php.vue */ "./resources/js/components/study/php.vue"));
     }
   }, {
     path: 'html',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ "resources_js_components_view_study_html_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./components/view/study/html.vue */ "./resources/js/components/view/study/html.vue"));
+      return __webpack_require__.e(/*! import() */ "resources_js_components_study_html_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./components/study/html.vue */ "./resources/js/components/study/html.vue"));
     }
   }, {
     path: 'javascript',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ "resources_js_components_view_study_javascript_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./components/view/study/javascript.vue */ "./resources/js/components/view/study/javascript.vue"));
+      return __webpack_require__.e(/*! import() */ "resources_js_components_study_javascript_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./components/study/javascript.vue */ "./resources/js/components/study/javascript.vue"));
     }
   }]
 }];
@@ -34017,7 +34017,7 @@ Vue.compile = compileToFunctions;
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_components_view_study_index_vue":1,"resources_js_components_view_study_basic_vue":1,"resources_js_components_view_study_php_vue":1,"resources_js_components_view_study_html_vue":1,"resources_js_components_view_study_javascript_vue":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_components_study_index_vue":1,"resources_js_components_study_basic_vue":1,"resources_js_components_study_php_vue":1,"resources_js_components_study_html_vue":1,"resources_js_components_study_javascript_vue":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};

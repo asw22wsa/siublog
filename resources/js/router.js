@@ -11,23 +11,23 @@ const routes = [
     },
     {
         path: '/study',
-        component:() => import('./components/view/study/index.vue'),
+        component:() => import('./components/study/index.vue'),
         children : [
             {
                 path: '/',
-                component:() => import('./components/view/study/basic.vue')
+                component:() => import('./components/study/basic.vue')
             },
             {
                 path: 'php',
-                component:() => import('./components/view/study/php.vue')
+                component:() => import('./components/study/php.vue')
             },
             {
                 path: 'html',
-                component:() => import('./components/view/study/html.vue')
+                component:() => import('./components/study/html.vue')
             },
             {
                 path: 'javascript',
-                component:() => import('./components/view/study/javascript.vue')
+                component:() => import('./components/study/javascript.vue')
             },
         ]
     }
