@@ -1,10 +1,13 @@
+import Vue from 'vue';
+import Router from 'vue-router';
+
 Vue.use(Router)
 
 const routes = [
     {
         path: '/',
-        name: 'welcome',
-        component:() => import('./components/view/index.vue')
+        name: 'index',
+        component:() => import('./components/index.vue')
     },
     {
         path: '/study',
