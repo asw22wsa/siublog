@@ -20,3 +20,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('/study', [StudyController::class,'index'])->name('study.index');
+Route::get('/study/{id}', [StudyController::class, 'show'])->name('study.show');
+Route::post('/study',[StudyController::class, 'store'])->name('study.store');
+Route::put('/study/{id}',[StudyController::class,'update'])->name('study.update');
+Route::delete('/study/{id}',[StudyController::class, 'destroy'])->name('study,delete');
