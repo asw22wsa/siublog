@@ -9,8 +9,9 @@ class Study extends Model
 {
     use HasFactory;
 
+    protected $table = 'studies';
+
     protected $fillable = [
-        'title',
-        'content',
+        
     ];
 }

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Study;
 
 class StudyController extends Controller
 {
@@ -13,7 +14,8 @@ class StudyController extends Controller
      */
     public function index()
     {
-        //
+        $study = Study::all();
+        return $study;
     }
 
     /**
