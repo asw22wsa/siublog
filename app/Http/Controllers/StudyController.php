@@ -36,7 +36,15 @@ class StudyController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'title' => 'required',
+            'content' => 'required',
+        ]);
+
+        Study::create($request->all());
+
+        return redirect(route('study.index'));
+
     }
 
     /**
@@ -47,7 +55,8 @@ class StudyController extends Controller
      */
     public function show($id)
     {
-        //
+        $study = Study::find($id);
+        return $study;
     }
 
     /**
@@ -81,6 +90,8 @@ class StudyController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Study::find($id)->delete();
+
+        return redirect(route('study.index'));
     }
 }

@@ -12,6 +12,6 @@ class Study extends Model
     protected $table = 'studies';
 
     protected $fillable = [
-        
+        'title','content'
     ];
 }
