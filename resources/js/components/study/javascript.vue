@@ -1,6 +1,6 @@
 <template>
   <div>
-
+    this is javasscript
   </div>
 </template>
 <script>

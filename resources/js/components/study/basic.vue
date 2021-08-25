@@ -1,6 +1,6 @@
 <template>
   <div>
-
+    this is basic
   </div>
 </template>
 <script>

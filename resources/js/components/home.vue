@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+  <div class="container">
         <h1>cart : {{ cartCount }}</h1>
         <h3>cart A : {{ cartACount }}</h3>
         <h2>Count : {{ count }}</h2>
@@ -11,7 +11,6 @@
         <button type="button" @click="getStudyList">Increment</button>
     </div>
 </template>
-
 <script>
 import ApiMixin from '../api.js';
     export default {
@@ -47,3 +46,6 @@ import ApiMixin from '../api.js';
         },
     }
 </script>
+<style scoped>
+
+</style>
