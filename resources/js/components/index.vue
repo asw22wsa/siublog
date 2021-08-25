@@ -1,7 +1,8 @@
 <template>
     <div class="container">
-        hello
-        <h2>Count : {{count}}</h2>
+        <h1>cart : {{ cartCount }}</h1>
+        <h3>cart A : {{ cartACount }}</h3>
+        <h2>Count : {{ count }}</h2>
         <button type="button" @click="increment">Increment</button>
     </div>
 </template>
@@ -11,6 +12,12 @@
         computed:{
             count(){
                 return this.$store.state.count;
+            },
+            cartCount(){
+                return this.$store.getters.cartCount;
+            },
+            cartACount(){
+                return this.$store.getters.productACount;
             }
         },
         methods:{

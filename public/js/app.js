@@ -20,10 +20,17 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   computed: {
     count: function count() {
       return this.$store.state.count;
+    },
+    cartCount: function cartCount() {
+      return this.$store.getters.cartCount;
+    },
+    cartACount: function cartACount() {
+      return this.$store.getters.productACount;
     }
   },
   methods: {
@@ -144,12 +151,31 @@ vue__WEBPACK_IMPORTED_MODULE_0__.default.use(vuex__WEBPACK_IMPORTED_MODULE_1__.d
 var store = new vuex__WEBPACK_IMPORTED_MODULE_1__.default.Store({
   state: function state() {
     return {
-      count: 0
+      count: 0,
+      cart: [{
+        produnct_id: 1,
+        product_name: '아이폰 거치대',
+        category: 'A'
+      }, {
+        produnct_id: 2,
+        product_name: '블루투스 마우스',
+        category: 'B'
+      }]
     };
   },
   mutations: {
     increment: function increment(state) {
       state.count = state.count + 1;
+    }
+  },
+  getters: {
+    cartCount: function cartCount(state) {
+      return state.cart.length;
+    },
+    productACount: function productACount(state) {
+      return state.cart.filter(function (p) {
+        return p.category == 'A';
+      }).length;
     }
   }
 });
@@ -18632,7 +18658,10 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "container" }, [
-    _vm._v("\n    hello\n    "),
+    _c("h1", [_vm._v("cart : " + _vm._s(_vm.cartCount))]),
+    _vm._v(" "),
+    _c("h3", [_vm._v("cart A : " + _vm._s(_vm.cartACount))]),
+    _vm._v(" "),
     _c("h2", [_vm._v("Count : " + _vm._s(_vm.count))]),
     _vm._v(" "),
     _c("button", { attrs: { type: "button" }, on: { click: _vm.increment } }, [
