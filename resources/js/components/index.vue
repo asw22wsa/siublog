@@ -4,11 +4,23 @@
         <h3>cart A : {{ cartACount }}</h3>
         <h2>Count : {{ count }}</h2>
         <button type="button" @click="increment">Increment</button>
+        <div :key="i" v-for="(studyList, i) in studyLists">
+            <h1>{{ studyList.title }}</h1>
+            <p> {{ studyList.content }}</p>
+        </div>
+        <button type="button" @click="getStudyList">Increment</button>
     </div>
 </template>
 
 <script>
+import ApiMixin from '../api.js';
     export default {
+        mixins:[ApiMixin],
+        data(){
+            return {
+                studyLists:[]
+            };
+        },
         computed:{
             count(){
                 return this.$store.state.count;
@@ -23,7 +35,15 @@
         methods:{
             increment(){
                 this.$store.commit("increment");
-            }
-        }
+            },
+            async getStudyList(){
+                this.studyLists = await this.$callAPI(
+                    "http://127.0.0.1:8000/api/study",
+                    "get",
+                    {}
+                );
+                console.log(this.studyLists);
+            },
+        },
     }
 </script>
