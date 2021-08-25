@@ -38,7 +38,7 @@ import ApiMixin from '../api.js';
             },
             async getStudyList(){
                 this.studyLists = await this.$callAPI(
-                    "http://127.0.0.1:8000/api/study",
+                    "/api/study",
                     "get",
                     {}
                 );
