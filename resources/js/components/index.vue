@@ -1,13 +1,22 @@
 <template>
     <div class="container">
-        this is index page
+        hello
+        <h2>Count : {{count}}</h2>
+        <button type="button" @click="increment">Increment</button>
     </div>
 </template>
 
 <script>
     export default {
-        mounted() {
-            console.log('Component mounted.')
+        computed:{
+            count(){
+                return this.$store.state.count;
+            }
+        },
+        methods:{
+            increment(){
+                this.$store.commit("increment");
+            }
         }
     }
 </script>
