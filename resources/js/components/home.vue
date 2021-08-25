@@ -8,7 +8,7 @@
             <h1>{{ studyList.title }}</h1>
             <p> {{ studyList.content }}</p>
         </div>
-        <button type="button" @click="getStudyList">Increment</button>
+        <button type="button" @click="getStudyList">Incremen</button>
     </div>
 </template>
 <script>
