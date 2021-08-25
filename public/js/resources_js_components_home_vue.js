@@ -3050,7 +3050,7 @@ var render = function() {
       _c(
         "button",
         { attrs: { type: "button" }, on: { click: _vm.getStudyList } },
-        [_vm._v("Incremen")]
+        [_vm._v("Increment")]
       )
     ],
     2
