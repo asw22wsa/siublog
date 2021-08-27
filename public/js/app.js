@@ -8429,7 +8429,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.nav > li.dropdown.open[data-v-a5a4112e] {\n  position: static;\n}\n.nav > li.dropdown.open .dropdown-menu[data-v-a5a4112e] {\n  display:table; width: 100%; text-align: center; left:0; right:0;\n}\n.dropdown-menu>li[data-v-a5a4112e] {\n  display: table-cell;\n}\n.bi-person-circle[data-v-a5a4112e]{\n  font-size: 1.5rem;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.nav .wide > li.dropdown.open[data-v-a5a4112e] {\n  position: static;\n}\n.nav .wide > li.dropdown.open .dropdown-menu[data-v-a5a4112e] {\n  display:table; width: 100%; text-align: center; left:0; right:0;\n}\n.wide .dropdown-menu>li[data-v-a5a4112e] {\n  display: table-cell;\n}\n.bi-person-circle[data-v-a5a4112e]{\n  font-size: 1.5rem;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -9238,7 +9238,7 @@ var staticRenderFns = [
                 attrs: { id: "navbarNavDropdown" }
               },
               [
-                _c("ul", { staticClass: "navbar-nav" }, [
+                _c("ul", { staticClass: "navbar-nav wide" }, [
                   _c("li", { staticClass: "nav-item" }, [
                     _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
                       _vm._v("PHP")

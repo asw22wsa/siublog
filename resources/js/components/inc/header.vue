@@ -7,7 +7,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav wide">
             <!-- <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li> -->
@@ -78,13 +78,13 @@ export default {
 }
 </script>
 <style scoped>
-.nav > li.dropdown.open {
+.nav .wide > li.dropdown.open {
   position: static;
 }
-.nav > li.dropdown.open .dropdown-menu {
+.nav .wide > li.dropdown.open .dropdown-menu {
   display:table; width: 100%; text-align: center; left:0; right:0;
 }
-.dropdown-menu>li {
+.wide .dropdown-menu>li {
   display: table-cell;
 }
 .bi-person-circle{
