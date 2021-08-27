@@ -3121,6 +3121,19 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: '',
   components: {},
@@ -9172,9 +9185,62 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "footer" }, [_vm._v("\n  this is footer\n")])
+  return _vm._m(0)
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "footer" }, [
+      _vm._v("\n  this is footer\n  "),
+      _c(
+        "div",
+        {
+          staticClass: "offcanvas offcanvas-start",
+          attrs: {
+            tabindex: "-1",
+            id: "offcanvasWithBackdrop",
+            "aria-labelledby": "offcanvasWithBackdropLabel"
+          }
+        },
+        [
+          _c("div", { staticClass: "offcanvas-header" }, [
+            _c(
+              "h5",
+              {
+                staticClass: "offcanvas-title",
+                attrs: { id: "offcanvasWithBackdropLabel" }
+              },
+              [_vm._v("안녕하세요 여기는 시우의 공부 공간 입니다.")]
+            ),
+            _vm._v(" "),
+            _c("button", {
+              staticClass: "btn-close text-reset",
+              attrs: {
+                type: "button",
+                "data-bs-dismiss": "offcanvas",
+                "aria-label": "Close"
+              }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "offcanvas-body" }, [
+            _c("p", [_vm._v("하나")]),
+            _vm._v(" "),
+            _c("p", [_vm._v("둘")]),
+            _vm._v(" "),
+            _c("p", [_vm._v("셋")]),
+            _vm._v(" "),
+            _c("p", [_vm._v("넷")]),
+            _vm._v(" "),
+            _c("p", [_vm._v("다섯")])
+          ])
+        ]
+      )
+    ])
+  }
+]
 render._withStripped = true
 
 

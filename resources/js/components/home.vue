@@ -9,6 +9,11 @@
             <p> {{ studyList.content }}</p>
         </div>
         <button type="button" @click="getStudyList">Increment</button>
+
+        <hr>
+
+        <!-- this button active footer div id="offcanvasWithBackdrop" -->
+        <button class="btn btn-danger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">Enable backdrop (default)</button>
     </div>
 </template>
 <script>

@@ -1877,6 +1877,11 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   mixins: [_api_js__WEBPACK_IMPORTED_MODULE_1__.default],
@@ -3051,6 +3056,22 @@ var render = function() {
         "button",
         { attrs: { type: "button" }, on: { click: _vm.getStudyList } },
         [_vm._v("Increment")]
+      ),
+      _vm._v(" "),
+      _c("hr"),
+      _vm._v(" "),
+      _c(
+        "button",
+        {
+          staticClass: "btn btn-danger",
+          attrs: {
+            type: "button",
+            "data-bs-toggle": "offcanvas",
+            "data-bs-target": "#offcanvasWithBackdrop",
+            "aria-controls": "offcanvasWithBackdrop"
+          }
+        },
+        [_vm._v("Enable backdrop (default)")]
       )
     ],
     2
