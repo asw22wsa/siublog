@@ -3355,19 +3355,17 @@ __webpack_require__.r(__webpack_exports__);
 
 vue__WEBPACK_IMPORTED_MODULE_0__.default.use(vuex__WEBPACK_IMPORTED_MODULE_1__.default);
 var store = new vuex__WEBPACK_IMPORTED_MODULE_1__.default.Store({
-  state: function state() {
-    return {
-      count: 0,
-      cart: [{
-        produnct_id: 1,
-        product_name: '아이폰 거치대',
-        category: 'A'
-      }, {
-        produnct_id: 2,
-        product_name: '블루투스 마우스',
-        category: 'B'
-      }]
-    };
+  state: {
+    count: 0,
+    cart: [{
+      produnct_id: 1,
+      product_name: '아이폰 거치대',
+      category: 'A'
+    }, {
+      produnct_id: 2,
+      product_name: '블루투스 마우스',
+      category: 'B'
+    }]
   },
   mutations: {
     increment: function increment(state) {

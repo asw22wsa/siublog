@@ -3,14 +3,12 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 
 const store = new Vuex.Store({
-  state() {
-    return{
+  state : {
       count: 0,
       cart: [
         {produnct_id:1, product_name:'아이폰 거치대',category:'A'},
         {produnct_id:2, product_name:'블루투스 마우스',category:'B'}
       ]
-    }
   },
   mutations:{
     increment(state){
