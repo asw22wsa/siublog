@@ -3030,7 +3030,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "container" },
+    { staticClass: "container", staticStyle: { height: "200vh" } },
     [
       _c("h1", [_vm._v("cart : " + _vm._s(_vm.cartCount))]),
       _vm._v(" "),

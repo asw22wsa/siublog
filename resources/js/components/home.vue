@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container" style="height:200vh;">
         <h1>cart : {{ cartCount }}</h1>
         <h3>cart A : {{ cartACount }}</h3>
         <h2>Count : {{ count }}</h2>

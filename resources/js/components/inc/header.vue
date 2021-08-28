@@ -1,6 +1,6 @@
 <template>
-  <div class="header bg-dark">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark container">
+  <div class="header bg-dark menu sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark container">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">SIU BLOG</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,6 +62,18 @@
   </div>
 </template>
 <script>
+$(document).ready(function(){
+    $(window).scroll(function(){
+        if($(window).scrollTop() != 0){
+            $(".menu").css({"opacity":"0.8"});  
+        }
+        else{
+            $(".menu").css({"opacity":"1"});
+        }
+
+    })
+})
+
 export default {
   name:'',
   components : {},

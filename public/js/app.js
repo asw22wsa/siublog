@@ -3223,6 +3223,19 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+$(document).ready(function () {
+  $(window).scroll(function () {
+    if ($(window).scrollTop() != 0) {
+      $(".menu").css({
+        "opacity": "0.8"
+      });
+    } else {
+      $(".menu").css({
+        "opacity": "1"
+      });
+    }
+  });
+});
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: '',
   components: {},
@@ -9269,12 +9282,10 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "header bg-dark" }, [
+    return _c("div", { staticClass: "header bg-dark menu sticky-top" }, [
       _c(
         "nav",
-        {
-          staticClass: "navbar navbar-expand-lg navbar-dark bg-dark container"
-        },
+        { staticClass: "navbar navbar-expand-lg navbar-dark container" },
         [
           _c("div", { staticClass: "container-fluid" }, [
             _c("a", { staticClass: "navbar-brand", attrs: { href: "#" } }, [
