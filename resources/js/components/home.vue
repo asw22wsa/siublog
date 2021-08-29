@@ -18,6 +18,7 @@
 </template>
 <script>
 import ApiMixin from '../api.js';
+import { mapState,mapGetters } from 'vuex';
     export default {
         mixins:[ApiMixin],
         data(){
@@ -26,15 +27,13 @@ import ApiMixin from '../api.js';
             };
         },
         computed:{
-            count(){
-                return this.$store.state.count;
-            },
-            cartCount(){
-                return this.$store.getters.cartCount;
-            },
-            cartACount(){
-                return this.$store.getters.productACount;
-            }
+            ...mapState([
+                'count'
+            ]),
+            ...mapGetters({
+                cartCount : 'cartCount',
+                cartACount : 'productACount'
+            })
         },
         methods:{
             increment(){
