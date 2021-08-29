@@ -3329,6 +3329,11 @@ var routes = [{
       return __webpack_require__.e(/*! import() */ "resources_js_components_study_javascript_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./components/study/javascript.vue */ "./resources/js/components/study/javascript.vue"));
     }
   }]
+}, {
+  path: '/*',
+  redirect: {
+    name: 'index'
+  }
 }];
 var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__.default({
   mode: 'history',

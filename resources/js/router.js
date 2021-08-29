@@ -30,6 +30,10 @@ const routes = [
                 component:() => import('./components/study/javascript.vue')
             },
         ]
+    },
+    {
+        path: '/*',
+        redirect: {name : 'index'}
     }
 ];
 
