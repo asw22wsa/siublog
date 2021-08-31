@@ -12,7 +12,7 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li> -->
             <li class="nav-item">
-              <a class="nav-link" href="#">PHP</a>
+              <router-link class="nav-link" :to="{name : 'study.php'}">PHP</router-link>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">HTML</a>

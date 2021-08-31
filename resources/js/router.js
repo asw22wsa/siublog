@@ -15,20 +15,28 @@ const routes = [
         children : [
             {
                 path: '/',
+                name: 'study.basic',
                 component:() => import('./components/study/basic.vue')
             },
             {
                 path: 'php',
+                name: 'study.php',
                 component:() => import('./components/study/php.vue')
             },
             {
                 path: 'html',
+                name: 'study.html',
                 component:() => import('./components/study/html.vue')
             },
             {
                 path: 'javascript',
+                name: 'study.javascript',
                 component:() => import('./components/study/javascript.vue')
             },
+            {
+                path: 'study/*',
+                redirect: {name : 'study.basic'}
+            }
         ]
     },
     {
