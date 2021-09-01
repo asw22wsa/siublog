@@ -6,36 +6,62 @@ Vue.use(Router)
 const routes = [
     {
         path: '/',
-        name: 'index',
-        component:() => import('./components/home.vue'),
+        name: 'home',
+        component:() => import(/* webpackChunkName: "home" */'./components/home.vue'),
     },
     {
         path: '/study',
-        component:() => import('./components/study/index.vue'),
+        component:() => import(/* webpackChunkName: "study" */'./components/study/index.vue'),
         children : [
             {
                 path: '/',
                 name: 'study.basic',
-                component:() => import('./components/study/basic.vue')
+                component:() => import(/* webpackChunkName: "study.basic" */'./components/study/basic.vue')
             },
             {
                 path: 'php',
                 name: 'study.php',
-                component:() => import('./components/study/php.vue')
+                component:() => import(/* webpackChunkName: "study.php" */'./components/study/php.vue')
             },
             {
                 path: 'html',
                 name: 'study.html',
-                component:() => import('./components/study/html.vue')
+                component:() => import(/* webpackChunkName: "study.html" */'./components/study/html.vue')
             },
             {
                 path: 'javascript',
                 name: 'study.javascript',
-                component:() => import('./components/study/javascript.vue')
+                component:() => import(/* webpackChunkName: "study.javascript" */'./components/study/javascript.vue')
             },
             {
-                path: 'study/*',
+                path: '*',
                 redirect: {name : 'study.basic'}
+            }
+        ]
+    },
+    {
+        path: '/community',
+        name:'community',
+        component: () => import(/* webpackChunkName: "community" */'./components/community/index.vue'),
+        children: [
+            {
+                path: 'free',
+                name: 'community.free',
+                component: () => import(/* webpackChunkName: "community.free" */'./components/community/free.vue')
+            },
+            {
+                path: 'qna',
+                name: 'community.qna',
+                component: () => import(/* webpackChunkName: "community.qna" */'./components/community/qna.vue')
+            },
+            {
+                path: 'notice',
+                name: 'community.notice',
+                component: () => import(/* webpackChunkName: "community.notice" */'./components/community/notice.vue')
+            },
+            {
+                path : '*',
+                redirect: {name : 'community'}
             }
         ]
     },

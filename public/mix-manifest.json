@@ -1,4 +1,15 @@
 {
     "/js/app.js": "/js/app.js",
-    "/css/app.css": "/css/app.css"
+    "/css/app.css": "/css/app.css",
+    "/js/home.js": "/js/home.js",
+    "/js/study.js": "/js/study.js",
+    "/js/about.js": "/js/about.js",
+    "/js/study.basic.js": "/js/study.basic.js",
+    "/js/study.php.js": "/js/study.php.js",
+    "/js/study.html.js": "/js/study.html.js",
+    "/js/study.javascript.js": "/js/study.javascript.js",
+    "/js/community.js": "/js/community.js",
+    "/js/community.free.js": "/js/community.free.js",
+    "/js/community.qna.js": "/js/community.qna.js",
+    "/js/community.notice.js": "/js/community.notice.js"
 }

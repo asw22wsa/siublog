@@ -15,13 +15,13 @@
               <router-link class="nav-link" :to="{name : 'study.php'}">PHP</router-link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">HTML</a>
+              <router-link class="nav-link" :to="{name : 'study.html'}">HTML</router-link>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="#">CSS</a>
-            </li>
+            </li> -->
             <li class="nav-item">
-              <a class="nav-link" href="#">JAVASCRIPT</a>
+              <router-link class="nav-link" :to="{name : 'study.javascript'}">JAVASCRIPT</router-link>
             </li>
             <!-- <li class="nav-item dropdown">
               <a class="nav-link dropdown" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -39,9 +39,9 @@
                 COMMUNITY
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="#">FREE</a></li>
-                <li><a class="dropdown-item" href="#">Q&A</a></li>
-                <li><a class="dropdown-item" href="#">NOTICE</a></li>
+                <li><router-link class="dropdown-item" :to="{name : 'community.free'}">FREE</router-link></li>
+                <li><router-link class="dropdown-item" :to="{name : 'community.qna'}">Q&A</router-link></li>
+                <li><router-link class="dropdown-item" :to="{name : 'community.notice'}">NOTICE</router-link></li>
               </ul>
             </li>
           </ul>
@@ -101,5 +101,8 @@ export default {
 }
 .bi-person-circle{
   font-size: 1.5rem;
+}
+.dropdown-item.active, .dropdown-item:active{
+  border-radius: 5px;
 }
 </style>

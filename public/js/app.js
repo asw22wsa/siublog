@@ -3299,43 +3299,73 @@ __webpack_require__.r(__webpack_exports__);
 vue__WEBPACK_IMPORTED_MODULE_0__.default.use(vue_router__WEBPACK_IMPORTED_MODULE_1__.default);
 var routes = [{
   path: '/',
-  name: 'index',
+  name: 'home',
   component: function component() {
-    return __webpack_require__.e(/*! import() */ "resources_js_components_home_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./components/home.vue */ "./resources/js/components/home.vue"));
+    return __webpack_require__.e(/*! import() | home */ "home").then(__webpack_require__.bind(__webpack_require__, /*! ./components/home.vue */ "./resources/js/components/home.vue"));
   }
 }, {
   path: '/study',
   component: function component() {
-    return __webpack_require__.e(/*! import() */ "resources_js_components_study_index_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./components/study/index.vue */ "./resources/js/components/study/index.vue"));
+    return __webpack_require__.e(/*! import() | study */ "study").then(__webpack_require__.bind(__webpack_require__, /*! ./components/study/index.vue */ "./resources/js/components/study/index.vue"));
   },
   children: [{
     path: '/',
     name: 'study.basic',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ "resources_js_components_study_basic_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./components/study/basic.vue */ "./resources/js/components/study/basic.vue"));
+      return __webpack_require__.e(/*! import() | study.basic */ "study.basic").then(__webpack_require__.bind(__webpack_require__, /*! ./components/study/basic.vue */ "./resources/js/components/study/basic.vue"));
     }
   }, {
     path: 'php',
     name: 'study.php',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ "resources_js_components_study_php_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./components/study/php.vue */ "./resources/js/components/study/php.vue"));
+      return __webpack_require__.e(/*! import() | study.php */ "study.php").then(__webpack_require__.bind(__webpack_require__, /*! ./components/study/php.vue */ "./resources/js/components/study/php.vue"));
     }
   }, {
     path: 'html',
     name: 'study.html',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ "resources_js_components_study_html_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./components/study/html.vue */ "./resources/js/components/study/html.vue"));
+      return __webpack_require__.e(/*! import() | study.html */ "study.html").then(__webpack_require__.bind(__webpack_require__, /*! ./components/study/html.vue */ "./resources/js/components/study/html.vue"));
     }
   }, {
     path: 'javascript',
     name: 'study.javascript',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ "resources_js_components_study_javascript_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./components/study/javascript.vue */ "./resources/js/components/study/javascript.vue"));
+      return __webpack_require__.e(/*! import() | study.javascript */ "study.javascript").then(__webpack_require__.bind(__webpack_require__, /*! ./components/study/javascript.vue */ "./resources/js/components/study/javascript.vue"));
     }
   }, {
-    path: 'study/*',
+    path: '*',
     redirect: {
       name: 'study.basic'
+    }
+  }]
+}, {
+  path: '/community',
+  name: 'community',
+  component: function component() {
+    return __webpack_require__.e(/*! import() | community */ "community").then(__webpack_require__.bind(__webpack_require__, /*! ./components/community/index.vue */ "./resources/js/components/community/index.vue"));
+  },
+  children: [{
+    path: 'free',
+    name: 'community.free',
+    component: function component() {
+      return __webpack_require__.e(/*! import() | community.free */ "community.free").then(__webpack_require__.bind(__webpack_require__, /*! ./components/community/free.vue */ "./resources/js/components/community/free.vue"));
+    }
+  }, {
+    path: 'qna',
+    name: 'community.qna',
+    component: function component() {
+      return __webpack_require__.e(/*! import() | community.qna */ "community.qna").then(__webpack_require__.bind(__webpack_require__, /*! ./components/community/qna.vue */ "./resources/js/components/community/qna.vue"));
+    }
+  }, {
+    path: 'notice',
+    name: 'community.notice',
+    component: function component() {
+      return __webpack_require__.e(/*! import() | community.notice */ "community.notice").then(__webpack_require__.bind(__webpack_require__, /*! ./components/community/notice.vue */ "./resources/js/components/community/notice.vue"));
+    }
+  }, {
+    path: '*',
+    redirect: {
+      name: 'community'
     }
   }]
 }, {
@@ -8467,7 +8497,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.nav .wide > li.dropdown.open[data-v-a5a4112e] {\n  position: static;\n}\n.nav .wide > li.dropdown.open .dropdown-menu[data-v-a5a4112e] {\n  display:table; width: 100%; text-align: center; left:0; right:0;\n}\n.wide .dropdown-menu>li[data-v-a5a4112e] {\n  display: table-cell;\n}\n.bi-person-circle[data-v-a5a4112e]{\n  font-size: 1.5rem;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.nav .wide > li.dropdown.open[data-v-a5a4112e] {\n  position: static;\n}\n.nav .wide > li.dropdown.open .dropdown-menu[data-v-a5a4112e] {\n  display:table; width: 100%; text-align: center; left:0; right:0;\n}\n.wide .dropdown-menu>li[data-v-a5a4112e] {\n  display: table-cell;\n}\n.bi-person-circle[data-v-a5a4112e]{\n  font-size: 1.5rem;\n}\n.dropdown-item.active[data-v-a5a4112e], .dropdown-item[data-v-a5a4112e]:active{\n  border-radius: 5px;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -9315,7 +9345,7 @@ var render = function() {
                       "router-link",
                       {
                         staticClass: "nav-link",
-                        attrs: { to: _vm.route({ name: "study.php" }) }
+                        attrs: { to: { name: "study.php" } }
                       },
                       [_vm._v("PHP")]
                     )
@@ -9323,16 +9353,111 @@ var render = function() {
                   1
                 ),
                 _vm._v(" "),
-                _vm._m(1),
+                _c(
+                  "li",
+                  { staticClass: "nav-item" },
+                  [
+                    _c(
+                      "router-link",
+                      {
+                        staticClass: "nav-link",
+                        attrs: { to: { name: "study.html" } }
+                      },
+                      [_vm._v("HTML")]
+                    )
+                  ],
+                  1
+                ),
                 _vm._v(" "),
-                _vm._m(2),
+                _c(
+                  "li",
+                  { staticClass: "nav-item" },
+                  [
+                    _c(
+                      "router-link",
+                      {
+                        staticClass: "nav-link",
+                        attrs: { to: { name: "study.javascript" } }
+                      },
+                      [_vm._v("JAVASCRIPT")]
+                    )
+                  ],
+                  1
+                ),
                 _vm._v(" "),
-                _vm._m(3),
-                _vm._v(" "),
-                _vm._m(4)
+                _c("li", { staticClass: "nav-item dropdown" }, [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "nav-link dropdown",
+                      attrs: {
+                        href: "#",
+                        id: "navbarDropdownMenuLink",
+                        role: "button",
+                        "data-bs-toggle": "dropdown",
+                        "aria-expanded": "false"
+                      }
+                    },
+                    [_vm._v("\n              COMMUNITY\n            ")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "ul",
+                    {
+                      staticClass: "dropdown-menu",
+                      attrs: { "aria-labelledby": "navbarDropdownMenuLink" }
+                    },
+                    [
+                      _c(
+                        "li",
+                        [
+                          _c(
+                            "router-link",
+                            {
+                              staticClass: "dropdown-item",
+                              attrs: { to: { name: "community.free" } }
+                            },
+                            [_vm._v("FREE")]
+                          )
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "li",
+                        [
+                          _c(
+                            "router-link",
+                            {
+                              staticClass: "dropdown-item",
+                              attrs: { to: { name: "community.qna" } }
+                            },
+                            [_vm._v("Q&A")]
+                          )
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "li",
+                        [
+                          _c(
+                            "router-link",
+                            {
+                              staticClass: "dropdown-item",
+                              attrs: { to: { name: "community.notice" } }
+                            },
+                            [_vm._v("NOTICE")]
+                          )
+                        ],
+                        1
+                      )
+                    ]
+                  )
+                ])
               ]),
               _vm._v(" "),
-              _vm._m(5)
+              _vm._m(1)
             ]
           )
         ])
@@ -9360,84 +9485,6 @@ var staticRenderFns = [
       },
       [_c("span", { staticClass: "navbar-toggler-icon" })]
     )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", { staticClass: "nav-item" }, [
-      _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
-        _vm._v("HTML")
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", { staticClass: "nav-item" }, [
-      _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
-        _vm._v("CSS")
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", { staticClass: "nav-item" }, [
-      _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
-        _vm._v("JAVASCRIPT")
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", { staticClass: "nav-item dropdown" }, [
-      _c(
-        "a",
-        {
-          staticClass: "nav-link dropdown",
-          attrs: {
-            href: "#",
-            id: "navbarDropdownMenuLink",
-            role: "button",
-            "data-bs-toggle": "dropdown",
-            "aria-expanded": "false"
-          }
-        },
-        [_vm._v("\n              COMMUNITY\n            ")]
-      ),
-      _vm._v(" "),
-      _c(
-        "ul",
-        {
-          staticClass: "dropdown-menu",
-          attrs: { "aria-labelledby": "navbarDropdownMenuLink" }
-        },
-        [
-          _c("li", [
-            _c("a", { staticClass: "dropdown-item", attrs: { href: "#" } }, [
-              _vm._v("FREE")
-            ])
-          ]),
-          _vm._v(" "),
-          _c("li", [
-            _c("a", { staticClass: "dropdown-item", attrs: { href: "#" } }, [
-              _vm._v("Q&A")
-            ])
-          ]),
-          _vm._v(" "),
-          _c("li", [
-            _c("a", { staticClass: "dropdown-item", attrs: { href: "#" } }, [
-              _vm._v("NOTICE")
-            ])
-          ])
-        ]
-      )
-    ])
   },
   function() {
     var _vm = this
@@ -26171,7 +26218,8 @@ var index = {
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_components_home_vue":1,"resources_js_components_study_index_vue":1,"resources_js_components_study_basic_vue":1,"resources_js_components_study_php_vue":1,"resources_js_components_study_html_vue":1,"resources_js_components_study_javascript_vue":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if (chunkId === "home") return "js/home.js";
+/******/ 			if ({"study":1,"study.basic":1,"study.php":1,"study.html":1,"study.javascript":1,"community":1,"community.free":1,"community.qna":1,"community.notice":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};
