@@ -61,7 +61,7 @@ const routes = [
             },
             {
                 path : '*',
-                redirect: {name : 'community'}
+                redirect: {name : 'community.free'}
             }
         ]
     },

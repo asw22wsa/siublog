@@ -3365,7 +3365,7 @@ var routes = [{
   }, {
     path: '*',
     redirect: {
-      name: 'community'
+      name: 'community.free'
     }
   }]
 }, {
