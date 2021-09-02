@@ -81,9 +81,9 @@ $(document).ready(function(){
         else{
             $(".menu").css({"opacity":"1"});
         }
-
     })
 })
+
 
 export default {
   name:'',
