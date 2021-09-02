@@ -45,14 +45,25 @@
               </ul>
             </li>
           </ul>
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav ms-auto d-none d-lg-flex">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="bi bi-person-circle"></i>
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="#">LOGIN</a></li>
-                <li><a class="dropdown-item" href="#">JOIN</a></li>
+                <li><router-link class="dropdown-item" :to="{name:'login'}">LOGIN</router-link></li>
+                <li><router-link class="dropdown-item" :to="{name:'register'}">JOIN</router-link></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto d-flex d-lg-none">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                MEMBER
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><router-link class="dropdown-item" :to="{name:'login'}">LOGIN</router-link></li>
+                <li><router-link class="dropdown-item" :to="{name:'register'}">JOIN</router-link></li>
               </ul>
             </li>
           </ul>
@@ -90,14 +101,16 @@ export default {
 }
 </script>
 <style scoped>
-.nav .wide > li.dropdown.open {
-  position: static;
-}
-.nav .wide > li.dropdown.open .dropdown-menu {
-  display:table; width: 100%; text-align: center; left:0; right:0;
-}
-.wide .dropdown-menu>li {
-  display: table-cell;
+@media(min-width: 992px){
+  .nav .wide > li.dropdown.open {
+    position: static;
+  }
+  .nav .wide > li.dropdown.open .dropdown-menu {
+    display:table; width: 100%; text-align: center; left:0; right:0;
+  }
+  .wide .dropdown-menu>li {
+    display: table-cell;
+  }
 }
 .bi-person-circle{
   font-size: 1.5rem;

@@ -66,6 +66,16 @@ const routes = [
         ]
     },
     {
+        path : '/login',
+        name: 'login',
+        component: () => import(/* webpackChunkName : "login"*/ './components/member/login.vue')
+    },
+    {
+        path : '/register',
+        name: 'register',
+        component: () => import(/* webpackChunkName : "register"*/ './components/member/register.vue')
+    },
+    {
         path: '/*',
         redirect: {name : 'index'}
     }

@@ -7,6 +7,12 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+$h7-font-size: $font-size-base * 0.5;
+
+$font-sizes: (
+  7:$h7-font-size
+);
+
 // Bootstrap-icon
 @import '~bootstrap-icons/font/bootstrap-icons.css';
 

@@ -3223,6 +3223,17 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 $(document).ready(function () {
   $(window).scroll(function () {
     if ($(window).scrollTop() != 0) {
@@ -3368,6 +3379,18 @@ var routes = [{
       name: 'community.free'
     }
   }]
+}, {
+  path: '/login',
+  name: 'login',
+  component: function component() {
+    return __webpack_require__.e(/*! import() */ "resources_js_components_member_login_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./components/member/login.vue */ "./resources/js/components/member/login.vue"));
+  }
+}, {
+  path: '/register',
+  name: 'register',
+  component: function component() {
+    return __webpack_require__.e(/*! import() */ "resources_js_components_member_register_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./components/member/register.vue */ "./resources/js/components/member/register.vue"));
+  }
 }, {
   path: '/*',
   redirect: {
@@ -8497,7 +8520,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.nav .wide > li.dropdown.open[data-v-a5a4112e] {\n  position: static;\n}\n.nav .wide > li.dropdown.open .dropdown-menu[data-v-a5a4112e] {\n  display:table; width: 100%; text-align: center; left:0; right:0;\n}\n.wide .dropdown-menu>li[data-v-a5a4112e] {\n  display: table-cell;\n}\n.bi-person-circle[data-v-a5a4112e]{\n  font-size: 1.5rem;\n}\n.dropdown-item.active[data-v-a5a4112e], .dropdown-item[data-v-a5a4112e]:active{\n  border-radius: 5px;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n@media(min-width: 992px){\n.nav .wide > li.dropdown.open[data-v-a5a4112e] {\n    position: static;\n}\n.nav .wide > li.dropdown.open .dropdown-menu[data-v-a5a4112e] {\n    display:table; width: 100%; text-align: center; left:0; right:0;\n}\n.wide .dropdown-menu>li[data-v-a5a4112e] {\n    display: table-cell;\n}\n}\n.bi-person-circle[data-v-a5a4112e]{\n  font-size: 1.5rem;\n}\n.dropdown-item.active[data-v-a5a4112e], .dropdown-item[data-v-a5a4112e]:active{\n  border-radius: 5px;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -9457,7 +9480,108 @@ var render = function() {
                 ])
               ]),
               _vm._v(" "),
-              _vm._m(1)
+              _c("ul", { staticClass: "navbar-nav ms-auto d-none d-lg-flex" }, [
+                _c("li", { staticClass: "nav-item dropdown" }, [
+                  _vm._m(1),
+                  _vm._v(" "),
+                  _c(
+                    "ul",
+                    {
+                      staticClass: "dropdown-menu",
+                      attrs: { "aria-labelledby": "navbarDropdownMenuLink" }
+                    },
+                    [
+                      _c(
+                        "li",
+                        [
+                          _c(
+                            "router-link",
+                            {
+                              staticClass: "dropdown-item",
+                              attrs: { to: { name: "login" } }
+                            },
+                            [_vm._v("LOGIN")]
+                          )
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "li",
+                        [
+                          _c(
+                            "router-link",
+                            {
+                              staticClass: "dropdown-item",
+                              attrs: { to: { name: "register" } }
+                            },
+                            [_vm._v("JOIN")]
+                          )
+                        ],
+                        1
+                      )
+                    ]
+                  )
+                ])
+              ]),
+              _vm._v(" "),
+              _c("ul", { staticClass: "navbar-nav ms-auto d-flex d-lg-none" }, [
+                _c("li", { staticClass: "nav-item dropdown" }, [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "nav-link dropdown",
+                      attrs: {
+                        href: "#",
+                        id: "navbarDropdownMenuLink",
+                        role: "button",
+                        "data-bs-toggle": "dropdown",
+                        "aria-expanded": "false"
+                      }
+                    },
+                    [_vm._v("\n              MEMBER\n            ")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "ul",
+                    {
+                      staticClass: "dropdown-menu",
+                      attrs: { "aria-labelledby": "navbarDropdownMenuLink" }
+                    },
+                    [
+                      _c(
+                        "li",
+                        [
+                          _c(
+                            "router-link",
+                            {
+                              staticClass: "dropdown-item",
+                              attrs: { to: { name: "login" } }
+                            },
+                            [_vm._v("LOGIN")]
+                          )
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "li",
+                        [
+                          _c(
+                            "router-link",
+                            {
+                              staticClass: "dropdown-item",
+                              attrs: { to: { name: "register" } }
+                            },
+                            [_vm._v("JOIN")]
+                          )
+                        ],
+                        1
+                      )
+                    ]
+                  )
+                ])
+              ])
             ]
           )
         ])
@@ -9490,45 +9614,20 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "navbar-nav ms-auto" }, [
-      _c("li", { staticClass: "nav-item dropdown" }, [
-        _c(
-          "a",
-          {
-            staticClass: "nav-link dropdown",
-            attrs: {
-              href: "#",
-              id: "navbarDropdownMenuLink",
-              role: "button",
-              "data-bs-toggle": "dropdown",
-              "aria-expanded": "false"
-            }
-          },
-          [_c("i", { staticClass: "bi bi-person-circle" })]
-        ),
-        _vm._v(" "),
-        _c(
-          "ul",
-          {
-            staticClass: "dropdown-menu",
-            attrs: { "aria-labelledby": "navbarDropdownMenuLink" }
-          },
-          [
-            _c("li", [
-              _c("a", { staticClass: "dropdown-item", attrs: { href: "#" } }, [
-                _vm._v("LOGIN")
-              ])
-            ]),
-            _vm._v(" "),
-            _c("li", [
-              _c("a", { staticClass: "dropdown-item", attrs: { href: "#" } }, [
-                _vm._v("JOIN")
-              ])
-            ])
-          ]
-        )
-      ])
-    ])
+    return _c(
+      "a",
+      {
+        staticClass: "nav-link dropdown",
+        attrs: {
+          href: "#",
+          id: "navbarDropdownMenuLink",
+          role: "button",
+          "data-bs-toggle": "dropdown",
+          "aria-expanded": "false"
+        }
+      },
+      [_c("i", { staticClass: "bi bi-person-circle" })]
+    )
   }
 ]
 render._withStripped = true
@@ -26219,7 +26318,7 @@ var index = {
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
 /******/ 			if (chunkId === "home") return "js/home.js";
-/******/ 			if ({"study":1,"study.basic":1,"study.php":1,"study.html":1,"study.javascript":1,"community":1,"community.free":1,"community.qna":1,"community.notice":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"study":1,"study.basic":1,"study.php":1,"study.html":1,"study.javascript":1,"community":1,"community.free":1,"community.qna":1,"community.notice":1,"resources_js_components_member_login_vue":1,"resources_js_components_member_register_vue":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};
