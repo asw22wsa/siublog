@@ -21,6 +21,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'CookieTest',
@@ -37,6 +40,20 @@ __webpack_require__.r(__webpack_exports__);
     },
     resetTest: function resetTest() {
       vue_cookies__WEBPACK_IMPORTED_MODULE_0___default().remove('test');
+      alert('삭제됨');
+    },
+    getTest2: function getTest2() {
+      if (vue_cookies__WEBPACK_IMPORTED_MODULE_0___default().isKey('siu')) {
+        alert(vue_cookies__WEBPACK_IMPORTED_MODULE_0___default().get('siu'));
+      } else {
+        alert('값 없음');
+      }
+    },
+    setTest2: function setTest2() {
+      vue_cookies__WEBPACK_IMPORTED_MODULE_0___default().set('siu', "i am siu");
+    },
+    resetTest2: function resetTest2() {
+      vue_cookies__WEBPACK_IMPORTED_MODULE_0___default().remove('siu');
       alert('삭제됨');
     }
   }
@@ -140,6 +157,15 @@ var render = function() {
     _c("br"),
     _vm._v(" "),
     _c("a", { on: { click: _vm.resetTest } }, [_vm._v("reset cookie")]),
+    _c("br"),
+    _vm._v(" "),
+    _c("a", { on: { click: _vm.getTest2 } }, [_vm._v("get cookie2")]),
+    _c("br"),
+    _vm._v(" "),
+    _c("a", { on: { click: _vm.setTest2 } }, [_vm._v("set cookie2")]),
+    _c("br"),
+    _vm._v(" "),
+    _c("a", { on: { click: _vm.resetTest2 } }, [_vm._v("reset cookie2")]),
     _c("br")
   ])
 }
