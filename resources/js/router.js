@@ -76,6 +76,11 @@ const routes = [
         component: () => import(/* webpackChunkName : "register"*/ './components/member/register.vue')
     },
     {
+        path : '/cookies',
+        name: 'cookies',
+        component: () => import(/* webpackChunkName : "cookies"*/ './components/test/cookies.vue')
+    },
+    {
         path: '/*',
         redirect: {name : 'index'}
     }
